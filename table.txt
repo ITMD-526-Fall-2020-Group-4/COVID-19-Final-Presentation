@@ -14,7 +14,6 @@ CREATE TABLE `COVID19_final_presentation` (
   `testing_rate` VARCHAR(32) DEFAULT NULL,
   `hospitalization_rate` VARCHAR(32) DEFAULT NULL,
   `date_reported` VARCHAR(24) DEFAULT NULL,
-  KEY `country_region` (`country_region`,`date_reported`),
-  KEY `country_region_2` (`country_region`,`province_state`,`date_reported`)
+  KEY `province_state` (`province_state`,`date_reported`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8
 ;
